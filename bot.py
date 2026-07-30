@@ -8,7 +8,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filte
 # --- fill these in with your own values ---
 TELEGRAM_BOT_TOKEN = "8838821876:AAEmckYZANK0u7wrB3nAAitpsw1jKCgrBOI"
 AIPIPE_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjIwMDE3NDNAZHMuc3R1ZHkuaWl0bS5hYy5pbiIsImlhdCI6MTc4NTA4ODk2MiwiaXNzIjoiaHR0cHM6Ly9haXBpcGUub3JnIiwiYXVkIjoiYWlwaXBlLWFwaSIsImV4cCI6MTc4NTY5Mzc2Mn0.yzGusA_WDguR25VTmFFZ7dTF4SdFum61wJHzAkV7iHM"
-LOG_URL = "https://raw.githubusercontent.com/23f2001743-blip/data_box/refs/heads/main/run.jsonl"  # see Step 5 — where run.jsonl will be hosted
+LOG_URL = "https://storage.googleapis.com/devjoshi-telegram-logs/run.jsonl"  # see Step 5 — where run.jsonl will be hosted
 # -------------------------------------------
 
 client = OpenAI(base_url="https://aipipe.org/openai/v1", api_key=AIPIPE_TOKEN)

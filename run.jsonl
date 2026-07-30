@@ -1,9 +1,0 @@
-{"type": "incoming", "chat_id": 1277363198, "text": "\"What is 15% of 200? Reply with ONLY this JSON: {\"answer\": , \"log_url\": \"...\"}\"", "timestamp": 1785438278.6741955}
-{"type": "outgoing", "chat_id": 1277363198, "text": "{\"answer\": 30, \"log_url\": \"https://raw.githubusercontent.com/23f2001743-blip/data_box/refs/heads/main/run.jsonl\"}", "timestamp": 1785438309.1202426}
-{"type": "incoming", "chat_id": 1277363198, "text": "ok", "timestamp": 1785438310.110314}
-{"type": "incoming", "chat_id": 1277363198, "text": "what is 1+1?", "timestamp": 1785438336.1302662}
-{"type": "outgoing", "chat_id": 1277363198, "text": "{\"answer\": 2, \"log_url\": \"https://raw.githubusercontent.com/23f2001743-blip/data_box/refs/heads/main/run.jsonl\"}", "timestamp": 1785438344.0044827}
-{"type": "incoming", "chat_id": 1277363198, "text": "my name is dev", "timestamp": 1785438387.015299}
-{"type": "outgoing", "chat_id": 1277363198, "text": "{\"answer\": \"dev\", \"log_url\": \"https://raw.githubusercontent.com/23f2001743-blip/data_box/refs/heads/main/run.jsonl\"}", "timestamp": 1785438397.3555717}
-{"type": "incoming", "chat_id": 1277363198, "text": "what is my name then apended with string \"xyz\"?", "timestamp": 1785438430.4287145}
-{"type": "outgoing", "chat_id": 1277363198, "text": "{\"answer\": \"devxyz\", \"log_url\": \"https://raw.githubusercontent.com/23f2001743-blip/data_box/refs/heads/main/run.jsonl\"}", "timestamp": 1785438441.2817218}
