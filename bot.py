@@ -12,10 +12,6 @@ from telegram.ext import (
     filters,
 )
 
-import json
-from google.oauth2 import service_account
-from google.cloud import storage
-
 # ---------------- CONFIG ----------------
 
 TELEGRAM_BOT_TOKEN = os.getenv("BOT_TOKEN")
@@ -33,26 +29,12 @@ client = OpenAI(
     api_key=AIPIPE_TOKEN,
 )
 
+storage_client = storage.Client()
+bucket = storage_client.bucket(BUCKET_NAME)
+blob = bucket.blob(LOG_OBJECT)
 
 conversation_history = {}
 
-
-service_account_info = json.loads(
-    os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"]
-)
-
-credentials = service_account.Credentials.from_service_account_info(
-    service_account_info
-)
-
-storage_client = storage.Client(
-    credentials=credentials,
-    project=service_account_info["project_id"],
-)
-
-bucket = storage_client.bucket(BUCKET_NAME)
-
-blob = bucket.blob(LOG_OBJECT)
 
 def log_event(event: dict):
     """Append a JSON object to run.jsonl stored in Google Cloud Storage."""

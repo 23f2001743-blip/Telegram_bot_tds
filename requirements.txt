@@ -1,4 +1,3 @@
 python-telegram-bot
 openai
-google-cloud-storage
 json
